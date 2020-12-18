@@ -19,8 +19,9 @@ const Free = props => (
 			</PanelHeaderButton>}
 		>
 			Халявные пин коды только тут
+			
 		</PanelHeader>
-		
+		<p id="text_change">Заменить текст</p>
 	</Panel>
 );
 
