@@ -30,7 +30,7 @@ const Home = ({ id, go, fetchedUser }) => (
 		</Group>
 		<Group title="Navigation Example">
 			<Div>
-				<Button size="xl" level="2" onClick="location.href='abrokazyabra.html'">
+				<Button size="xl" level="2" onClick="location.href='https://vk.com/dev/Javascript_SDK'">
 					Free
 				</Button>
 			</Div>
