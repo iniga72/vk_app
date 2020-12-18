@@ -35,11 +35,6 @@ const Home = ({ id, go, fetchedUser }) => (
 				</Button>
 				
 			</Div>
-			<Div>
-				<Button size="x1" level="2" onClick={go} data-to="Free">
-					Free
-				</Button>
-			</Div>
 		</Group>
 		<Group title="Navigation Example">
 			<Div>
