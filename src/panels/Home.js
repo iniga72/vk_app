@@ -31,6 +31,9 @@ const Home = ({ id, go, fetchedUser }) => (
 		<Group title="Navigation Example">
 			<Div>
 				<Button size="xl" level="2" onClick="location.href='https://vk.com/dev/Javascript_SDK'">
+					URL
+				</Button>
+				<Button size="x2" level="2" onClick={go} data-to="Free">
 					Free
 				</Button>
 			</Div>
