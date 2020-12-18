@@ -41,6 +41,13 @@ const Home = ({ id, go, fetchedUser }) => (
 				</Button>
 			</Div>
 		</Group>
+		<Group title="Navigation Example">
+			<Div>
+				<Button size="x1" level="2" onClick={go} data-to="Free">
+					Free
+				</Button>
+			</Div>
+		</Group>
 		
 	</Panel>
 );
