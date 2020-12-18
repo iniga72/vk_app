@@ -18,7 +18,6 @@ const Home = ({ id, go, fetchedUser }) => (
 				description={fetchedUser.city && fetchedUser.city.title ? fetchedUser.city.title : ''}
 			>
 				{`${fetchedUser.first_name} ${fetchedUser.last_name}`}
-				
 			</Cell>
 		</Group>}
 
@@ -31,7 +30,7 @@ const Home = ({ id, go, fetchedUser }) => (
 		</Group>
 		<Group title="Navigation Example">
 			<Div>
-				<Button size="xl" level="2" onClick={showSpinner}>
+				<Button size="xl" level="2" onClick={go} data-to="Free">
 					Free
 				</Button>
 			</Div>
