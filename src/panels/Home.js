@@ -33,6 +33,9 @@ const Home = ({ id, go, fetchedUser }) => (
 				<Button size="xl" level="2" onclick={go} data-to="http://myrusakov.ru">
 					URL
 				</Button>
+				
+			</Div>
+			<Div>
 				<Button size="x1" level="2" onClick={go} data-to="Free">
 					Free
 				</Button>
