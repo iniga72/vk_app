@@ -12,16 +12,14 @@ const osName = platform();
 
 const Free = props => (
 	<Panel id={props.id}>
-
-		<PanelHeader af
+		<PanelHeader
 			left={<PanelHeaderButton onClick={props.go} data-to="home">
 				{osName === IOS ? <Icon28ChevronBack/> : <Icon24Back/>}
 			</PanelHeaderButton>}
 		>
-			Халявные пин коды только тут
-			
+			Мяукало
 		</PanelHeader>
-		<p id="text_change">Заменить текст</p>
+		
 	</Panel>
 );
 
