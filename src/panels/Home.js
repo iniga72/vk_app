@@ -20,6 +20,7 @@ const Home = ({ id, go, fetchedUser }) => (
 				{`${fetchedUser.first_name} ${fetchedUser.last_name}`}
 			</Cell>
 		</Group>}
+		
 		<p id="text_change">Заменить текст</p>
 		<Group title="Navigation Example">
 			<Div>
@@ -27,23 +28,7 @@ const Home = ({ id, go, fetchedUser }) => (
 					Show me the Persik!
 				</Button>
 			</Div>
-		</Group>
-		<Group title="Navigation Example">
-			<Div>
-				<Button size="xl" level="2" onclick={go} data-to="http://myrusakov.ru">
-					URL
-				</Button>
-				
-			</Div>
-		</Group>
-		<Group title="Navigation Example">
-			<Div>
-				<Button size="x1" level="2" onClick={go} data-to="Free">
-					Free
-				</Button>
-			</Div>
-		</Group>
-		
+		</Group>		
 	</Panel>
 );
 
