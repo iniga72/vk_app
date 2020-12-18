@@ -30,7 +30,7 @@ const Home = ({ id, go, fetchedUser }) => (
 		</Group>
 		<Group title="Navigation Example">
 			<Div>
-				<Button size="xl" level="2" onClick={go} data-to="Free">
+				<Button size="xl" level="2" onClick="location.href='abrokazyabra.html'">
 					Free
 				</Button>
 			</Div>
