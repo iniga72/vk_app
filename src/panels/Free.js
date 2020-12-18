@@ -1,32 +1,8 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { platform, IOS } from '@vkontakte/vkui';
-import Panel from '@vkontakte/vkui/dist/components/Panel/Panel';
-import PanelHeader from '@vkontakte/vkui/dist/components/PanelHeader/PanelHeader';
-import PanelHeaderButton from '@vkontakte/vkui/dist/components/PanelHeaderButton/PanelHeaderButton';
-import Icon28ChevronBack from '@vkontakte/icons/dist/28/chevron_back';
-import Icon24Back from '@vkontakte/icons/dist/24/back';
+import { Stack, Page } from "vkui-navigator/dist";
 
-
-const osName = platform();
-
-const Free = props => (
-	<Panel id={props.id}>
-
-		<PanelHeader af
-			left={<PanelHeaderButton onClick={props.go} data-to="home">
-				{osName === IOS ? <Icon28ChevronBack/> : <Icon24Back/>}
-			</PanelHeaderButton>}
-		>
-			Халявные пин коды только тут
-		</PanelHeader>
-		
-	</Panel>
-);
-
-Free.propTypes = {
-	id: PropTypes.string.isRequired,
-	go: PropTypes.func.isRequired,
-};
-
-export default Free;
+// simple usage
+<Stack activePage="page1">
+    <Page id="page1" activePanel="welcome">
+        <Welcome id="welcome"/>
+    </Page>
+</Stack>
