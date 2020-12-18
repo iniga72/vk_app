@@ -12,7 +12,8 @@ const osName = platform();
 
 const Free = props => (
 	<Panel id={props.id}>
-		<PanelHeader
+
+		<PanelHeader af
 			left={<PanelHeaderButton onClick={props.go} data-to="home">
 				{osName === IOS ? <Icon28ChevronBack/> : <Icon24Back/>}
 			</PanelHeaderButton>}
