@@ -21,8 +21,8 @@ const Persik = props => (
 		>
 			Мяукало
 		</PanelHeader>
-		
-		<img className="Persik" src={persik} alt="Persik The Cat"/>
+
+		<p id="text_change">"тест"</p>
 	</Panel>
 );
 
