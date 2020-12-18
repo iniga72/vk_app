@@ -41,29 +41,7 @@ const Home = ({ id, go, fetchedUser }) => (
 				</Button>
 			</Div>
 		</Group>
-		<Group title="Navigation Example">
-			<Div>
-				
-				<FormLayout>
-            <Input
-               type="text"
-               defaultValue=""
-               placeholder="Enter your name"
-               className="active"
-            />
-            <CustomTextarea
-               name="textarea1"
-               className="custom"
-               disabled={this.state.blocks.textarea.disabled}
-               value={this.state.userData.textarea}
-            />
-            <Button
-               size="xl"
-               level="secondary"
-            >Submit</Button>
-         </FormLayout>
-			</Div>
-		</Group>
+		
 	</Panel>
 );
 
