@@ -20,36 +20,16 @@ const Home = ({ id, go, fetchedUser }) => (
 				{`${fetchedUser.first_name} ${fetchedUser.last_name}`}
 			</Cell>
 		</Group>}
-
 		<p id="text_change">Заменить текст</p>
 		<Group title="Navigation Example">
 			<Div>
-				<Button size="xl" level="2" onClick={() => this.openPopout()}>
+				<Button size="xl" level="2" onClick={go} data-to="persik">
 					Show me the Persik!
 				</Button>
 			</Div>
 		</Group>		
 	</Panel>
 );
-openPopout() {
-        this.props.openPopout(
-            <Alert
-                actions={[{
-                    title: 'Нет',
-                    autoclose: true,
-                    style: 'cancel',
-                }, {
-                    title: 'Да',
-                    autoclose: true,
-                    action: this.showImg
-                }]}
-                onClose={() => this.props.closePopout()}
-            >
-                <h2>Вопрос значит</h2>
-                <p>Вас роняли в детстве?</p>
-            </Alert>
-        );
-    };
 
 Home.propTypes = {
 	id: PropTypes.string.isRequired,
